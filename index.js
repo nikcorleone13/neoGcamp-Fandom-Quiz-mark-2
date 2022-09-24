@@ -12,10 +12,10 @@ function play(question, option, answer){
     var userAnswer = readlineSync.question(option) 
 
     if (userAnswer.toUpperCase() === answer.toUpperCase()) {
-        console.log(chalk.green('Right answer'));
+        console.log(chalk.green('Right answer!!! Keep Going'));
         score +=1;
     } else {
-        console.log(chalk.red('Wrong answer!!!\n'));
+        console.log(chalk.red('Wrong answer!!! \n'));
         console.log(chalk.yellow('Correct answer is '+ answer));
 
     }
