@@ -6,6 +6,7 @@ var score = 0;
 //program starts
 var myname = readlineSync.question("Please enter your name \n");
 console.log(chalk.yellow ('\nWELCOME '+ myname + ' on "How well you know Nikhil ?"\n\n'));
+console.log("You have to type only the option. If the answer is option B, just type B in either case");
 
 //play fucntion
 function play(question, option, answer){
