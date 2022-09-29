@@ -5,13 +5,8 @@ var score = 0;
 
 //program starts
 var myname = readlineSync.question("Please enter your name \n");
-<<<<<<< HEAD
 console.log(chalk.yellow('\nWELCOME ' + myname + ' on "Batman Fandom Quiz"\n'));
 console.log("You need to only type the option and not the answer associated with the option. If the answer is option B, just type B in either case\n");
-=======
-console.log(chalk.yellow ('\nWELCOME '+ myname + ' on "How well you know Nikhil ?"\n\n'));
-console.log("You have to type only the option. If the answer is option B, just type B in either case");
->>>>>>> 5698851c52f75743b151023f0aab19ecbcf02e24
 
 //play fucntion
 function play(question, option, answer){
@@ -19,10 +14,10 @@ function play(question, option, answer){
     var userAnswer = readlineSync.question(option) 
 
     if (userAnswer.toUpperCase() === answer.toUpperCase()) {
-        console.log(chalk.green('Right answer!!! Keep Going'));
+        console.log(chalk.green('Right answer!'));
         score +=1;
     } else {
-        console.log(chalk.red('Wrong answer!!! \n'));
+        console.log(chalk.red('Wrong answer!!!'));
         console.log(chalk.yellow('Correct answer is '+ answer));
 
     }
@@ -66,7 +61,7 @@ for(var i = 0 ; i<len; i++){
     var currentQuestion = questions[i];
     play(currentQuestion.question, currentQuestion.option, currentQuestion.answer);
 }
-console.log(chalk.bgGreenBright("Your Final Score is "+ score+ "..\n\n"));
+console.log(chalk.bgGreenBright("Your Final Score is "+ score+ "..\n"));
 console.log("Thank You " + myname +" for playing this game");
 
 
