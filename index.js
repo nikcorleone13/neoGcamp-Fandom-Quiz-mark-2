@@ -5,10 +5,12 @@ var score = 0;
 
 //program starts
 var myname = readlineSync.question("Please enter your name \n");
-console.log(chalk.yellow ('\nWELCOME '+ myname + ' on "How well you know Nikhil ?"\n\n'));
+console.log(chalk.yellow('\nWELCOME ' + myname + ' on "Batman Fandom Quiz"\n'));
+console.log("You need to only type the option and not the answer associated with the option. If the answer is option B, just type B in either case\n");
 
 //play fucntion
 function play(question, option, answer){
+    console.log(question);
     var userAnswer = readlineSync.question(option) 
 
     if (userAnswer.toUpperCase() === answer.toUpperCase()) {
@@ -60,6 +62,7 @@ for(var i = 0 ; i<len; i++){
     play(currentQuestion.question, currentQuestion.option, currentQuestion.answer);
 }
 console.log(chalk.bgGreenBright("Your Final Score is "+ score+ "..\n\n"));
+console.log("Thank You " + myname +" for playing this game");
 
 
 //https://replit.com/@swdnikhil/How-well-you-know-me?v=1
