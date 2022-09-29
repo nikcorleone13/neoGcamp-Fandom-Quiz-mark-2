@@ -5,8 +5,13 @@ var score = 0;
 
 //program starts
 var myname = readlineSync.question("Please enter your name \n");
+<<<<<<< HEAD
 console.log(chalk.yellow('\nWELCOME ' + myname + ' on "Batman Fandom Quiz"\n'));
 console.log("You need to only type the option and not the answer associated with the option. If the answer is option B, just type B in either case\n");
+=======
+console.log(chalk.yellow ('\nWELCOME '+ myname + ' on "How well you know Nikhil ?"\n\n'));
+console.log("You have to type only the option. If the answer is option B, just type B in either case");
+>>>>>>> 5698851c52f75743b151023f0aab19ecbcf02e24
 
 //play fucntion
 function play(question, option, answer){
